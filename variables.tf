@@ -4,6 +4,6 @@
 #   default = "us-east-1"
 # }
 
-variable "73.212.249.79/32" {
+variable "access_ip" {
   type = string
 }
