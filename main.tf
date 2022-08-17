@@ -3,7 +3,7 @@
 module "networking" {
   source        = "./networking"
   vpc_cidr      = "10.0.0.0/16"
-  access_ip     = var.access_ip
+  access_ip     = "73.212.249.79/32"
   public_cidrs  = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
   private_cidrs = ["10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24"]
 }
