@@ -162,6 +162,7 @@ resource "aws_security_group" "project_web_sg" {
   name        = "project_web_sg"
   description = "Allow all inbound HTTP traffic"
   vpc_id      = aws_vpc.project_vpc.id
+ {
 
   ingress {
     from_port   = 80
