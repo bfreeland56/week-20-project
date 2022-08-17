@@ -129,6 +129,7 @@ resource "aws_security_group" "project_private_sg" {
   name        = "project_database_sg"
   description = "Allow SSH inbound traffic from Bastion Host"
   vpc_id      = aws_vpc.project_vpc.id
+}
 
  ingress {
     from_port       = 22
