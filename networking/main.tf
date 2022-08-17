@@ -124,9 +124,7 @@ resource "aws_security_group" "project_public_sg" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
-  }
-}
-
+ }
 resource "aws_security_group" "project_private_sg" {
   name        = "project_database_sg"
   description = "Allow SSH inbound traffic from Bastion Host"
