@@ -106,7 +106,7 @@ resource "aws_default_route_table" "project_private_rt" {
   }
 }
 
-resource "aws_security_group" "project_public_sg" {
+resource "aws_security_group" "project_bastion_sg" {
   name        = "project_bastion_sg"
   description = "Allow SSH inbound traffic"
   vpc_id      = aws_vpc.project_vpc.id
