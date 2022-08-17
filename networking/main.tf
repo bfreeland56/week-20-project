@@ -135,7 +135,7 @@ resource "aws_security_group" "project_private_sg" {
     from_port       = 22
     to_port         = 22
     protocol        = "tcp"
-    security_groups = [aws_security_group.project_public_sg.id]
+    security_groups = [aws_security_group.project_private_sg.id]
   }
 
   egress {
